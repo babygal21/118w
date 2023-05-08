@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<head>
+  <style>
+    body {
+      background-color: #ffffff; 
+      font-family:Arial, Helvetica, sans-serif;
+  font-size: large;
+  letter-spacing:-0.01em;
+  
+    }
+  </style>
+</head>
+<title>MeetingPoint</title>
+<style>
+ body {
+   margin: 20px;
+ }
+
+ .topnav {
+ background-color: rgb(1, 1, 1);
+ overflow: hidden;
+ font-weight:bold;
+
+}
+
+
+
+.topnav a {
+ float: left;
+ color: #ffffff;
+;
+ text-align: center;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ letter-spacing:0.1em;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ 
+}
+
+
+.topnav a:hover {
+ background-color:  rgb(240, 223, 96);
+ color: black;
+}
+
+
+.topnav a.active {
+ background-color: rgb(57, 127, 219);
+ color: rgb(255, 255, 255);
+}
+
+	/* Hide the answer until the question is clicked */
+  .answer {
+			display: none;
+      font-family:Arial, Helvetica, sans-serif;
+  font-size: large;
+  letter-spacing:-0.01em;
+		}
+		.show {
+			display: block;
+		}
+.question{
+  cursor: pointer;
+  font-family:Arial, Helvetica, sans-serif;
+   letter-spacing:0.03em;
+}
+h2 {
+  background-color: rgb(57, 127, 219);
+    font-size: 4rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align:center;
+   padding: 10px 5px;
+   font-weight: bold;
+    text-align: center;
+    letter-spacing:0.01em;
+    text-shadow: 5px 5px #000000;
+    -webkit-text-stroke: 2px black;
+ }
+</style>
+</head>
+<body>
+    <header>
+     <div class="topnav">
+        <a href="eventproject.html">HOME</a>
+       <a href="about.html">ABOUT</a>
+       <a href="companies.html">ORGANIZATIONS</a>
+       <a class="active" href="faq.html">FAQ</a>
+     </div>
+<h2><font color="white">FAQs</h2></font>
+	<div class="question">
+		<h3>What is the purpose of this event?</h3>
+		<div class="answer">
+			<p>The purpose for MeetingPoint is to give SJSU Students the opportunity to network with professionals from
+             various companies and help guide them to potential internships or full time jobs in the future.</p>
+		</div>
+	</div>
+	<div class="question">
+		<h3>How do I sign up?</h3>
+		<div class="answer">
+			<p>You can sign up for this event by clicking the link on the home page. You will get a confirmation email sent to you once you are registered.</p>
+		</div>
+	</div>
+  <div class="question">
+		<h3>Where will this event be located?</h3>
+		<div class="answer">
+			<p>This event will be located at SJSU's Tower Lawn. More information regarding the location can be found in our "About" page. </p>
+		</div>
+    <div class="question">
+		<h3>What is the dress code for this event?</h3>
+		<div class="answer">
+			<p>You will be meeting professionals from various companies, it is recommended that you wear business attire.</p>
+		</div>
+	</div>
+    <div class="question">
+		<h3>Who can attend this event?</h3>
+		<div class="answer">
+			<p>MeetingPoint is open to all current SJSU students.</p>
+		</div>
+	</div>
+    <div class="question">
+		<h3>Do I have to bring anything with me to this event?</h3>
+		<div class="answer">
+			<p>We recommend that you bring copies of your resume. </p>
+		</div>
+	</div>
+    <div class="question">
+		<h3>What companies will be attending this event?</h3>
+		<div class="answer">
+			<p>In our navigation bar above, by clicking on "Organizations," you will see a list of all companies that will be attending this event.</p>
+		</div>
+	</div>
+    <div class="question">
+		<h3>Is there a cost to attend this event?</h3>
+		<div class="answer">
+			<p>No, this event is free for current SJSU students.</p>
+		</div>
+	</div>
+    <div class="question">
+		<h3>Will there be food served at this event?</h3>
+		<div class="answer">
+			<p>Unfortunately, no. The main focus of this event is to network with professionals and connect with them for future opportunities.</p>
+		</div>
+    <br>
+	</div>
+	<script>
+		// Add event listeners to each question to toggle the answer when clicked
+		var questions = document.querySelectorAll(".question");
+		questions.forEach(function(question) {
+			var answer = question.querySelector(".answer");
+			question.addEventListener("click", function() {
+				answer.classList.toggle("show");
+			});
+		});
+	</script>
+
+</body>
+
+</html>
